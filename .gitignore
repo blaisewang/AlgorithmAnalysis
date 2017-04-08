@@ -1,0 +1,12 @@
+
+*.class
+
+lib/orsoncharts-1.4-eval-nofx.jar
+
+lib/jfreechart-1.0.19-swt.jar
+
+*.jar
+
+*.jpg
+
+*.txt
