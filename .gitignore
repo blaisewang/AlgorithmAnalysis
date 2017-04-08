@@ -2,7 +2,6 @@
 
 *.txt
 
-AlgorithmAnalysis.iml
 lib/
 out/
 .idea/

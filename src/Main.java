@@ -1,6 +1,5 @@
 import lab1.*;
 import lab2.*;
-import lab3.*;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtilities;
 import org.jfree.chart.JFreeChart;
@@ -21,7 +20,6 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.security.NoSuchAlgorithmException;
 import java.security.SecureRandom;
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -37,10 +35,6 @@ public class Main {
             } catch (NoSuchAlgorithmException | IOException e) {
                 e.printStackTrace();
             }
-
-            ArrayList<Integer> arrayList = MaximumSubArray.getMaximumSubArray(array);
-            int sum = arrayList.stream().reduce(0, Integer::sum);
-            System.out.println("Sum: " + sum + "\n" + "MaxSubArray: " + arrayList.toString());
 
             int number = new Scanner(System.in).nextInt();
             System.out.println("The " + number + "th Minimum: " + QuickSort.findNthMinimum(array, number));
