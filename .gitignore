@@ -1,13 +1,8 @@
-
-*.class
-
-*.jar
-
 *.jpg
 
 *.txt
 
-
-*.xml
-
-*.html
+AlgorithmAnalysis.iml
+lib/
+out/
+.idea/
