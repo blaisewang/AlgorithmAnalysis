@@ -17,6 +17,10 @@ So you need to import [JFreeChart](https://github.com/jfree/jfreechart) librarie
 
 
 ## Lab 3
-The Solution to Maximum Subarray Problem and its sum with Time complexity O(n)
+The Solution to Maximum Subarray Problem and its sum with time complexity O(n)
 
+
+
+
+Feel free to use/take/change it.
 
