@@ -10,14 +10,16 @@ Insertion Sort and Merge Sort
 Quick Sort and Find N'th Smallest Element in Unsorted Array
 
 
-Beside this, I did some minor work to compare the efficiency of Quick Sort and Merge Sort with [JFreeChart](https://github.com/jfree/jfreechart).
+Beside this, I did some minor work to compare the efficiency of Quick Sort and Merge Sort (The efficiency of Insertion Sort is too low to compare with these two sort methods)
+ with [JFreeChart](https://github.com/jfree/jfreechart).
+
 So you need to import [JFreeChart](https://github.com/jfree/jfreechart) libraries before compile the project.
 
 
 
 
 ## Lab 3
-The Solution to Maximum Subarray Problem and its sum with time complexity O(n)
+The Solution to Maximum SubArray Problem and its sum with time complexity O(n)
 
 
 
