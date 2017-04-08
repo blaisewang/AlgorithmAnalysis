@@ -1,7 +1,5 @@
-*.jpg
-
-*.txt
-
 lib/
 out/
 .idea/
+*.jpg
+*.txt
