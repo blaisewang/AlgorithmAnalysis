@@ -44,7 +44,7 @@ public class Main {
             for (int i = 0; i < arraySize; i++) {
                 System.out.format("%" + width + "d %11d ", i + 1, array[i]);
                 if ((i + 1) % 10 == 0) {
-                    System.out.print("\n");
+                    System.out.print("\n\n");
                 }
             }
         }).start();
