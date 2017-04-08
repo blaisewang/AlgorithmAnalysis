@@ -44,7 +44,7 @@ public class Main {
             for (int i = 0; i < arraySize; i++) {
                 System.out.format("%" + width + "d %11d ", i + 1, array[i]);
                 if ((i + 1) % 10 == 0) {
-                    System.out.print("\n\n");
+                    System.out.print("\n");
                 }
             }
         }).start();
@@ -54,8 +54,8 @@ public class Main {
         CategoryDataset categoryDataset = getDataSet();
         JFreeChart lineChart = ChartFactory.createLineChart(
                 "Different Algorithms Consume Time Comparison Graphs",
-                "Data Size(Million)",
-                "Time Consumed(Millisecond)",
+                "Data Size (Million)",
+                "Time Consumed (Millisecond)",
                 categoryDataset,
                 PlotOrientation.VERTICAL,
                 true,
