@@ -19,9 +19,11 @@ So you need to import [JFreeChart](https://github.com/jfree/jfreechart) librarie
 
 
 ## Lab 3
-The Solution to Maximum SubArray Problem and its sum with time complexity O(n)
+The Solution to Maximum SubArray problem and its sum with time complexity O(n)
 
 
+## Lab 4
+Get Longest Common Subsequence from two strings and the length of LCS.
 
 
 Feel free to use/take/change it.
