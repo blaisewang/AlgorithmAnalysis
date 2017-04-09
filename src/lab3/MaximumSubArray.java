@@ -55,7 +55,7 @@ public class MaximumSubArray {
             e.printStackTrace();
         }
 
-        ArrayList<Integer> arrayList = MaximumSubArray.getMaximumSubArray(array);
+        ArrayList<Integer> arrayList = getMaximumSubArray(array);
         int sum = arrayList.stream().reduce(0, Integer::sum);
         System.out.println("Sum: " + sum + "\n" + "MaxSubArray: " + arrayList.toString());
     }
