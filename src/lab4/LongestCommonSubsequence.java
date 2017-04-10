@@ -1,5 +1,6 @@
 package lab4;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -15,7 +16,19 @@ public class LongestCommonSubsequence {
     private static int[][] table;
     private static StringBuilder stringBuilder = new StringBuilder();
 
-    private static void longestCommonSubsequence() {
+    private static String getLCS(String first, String second) {
+        stringBuilder = new StringBuilder();
+        longestCommonSubsequence(first, second);
+        getLCS(firstLength, secondLength);
+        return stringBuilder.toString();
+    }
+
+    private static void longestCommonSubsequence(String firstString, String secondString) {
+        first = firstString;
+        second = secondString;
+        firstLength = first.length();
+        secondLength = second.length();
+        table = new int[firstLength + 1][secondLength + 1];
         for (int row = 0; row <= firstLength; row++) {
             for (int column = 0; column <= secondLength; column++) {
                 if (row != 0 && column != 0) {
@@ -25,6 +38,7 @@ public class LongestCommonSubsequence {
                         table[row][column] = table[row - 1][column - 1] + 1;
                     }
                 }
+
             }
         }
     }
@@ -49,16 +63,11 @@ public class LongestCommonSubsequence {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("First string:");
-        first = scanner.nextLine();
+        String first = scanner.nextLine();
         System.out.println("Second string:");
-        second = scanner.nextLine();
+        String second = scanner.nextLine();
         scanner.close();
-        firstLength = first.length();
-        secondLength = second.length();
-        table = new int[firstLength + 1][secondLength + 1];
-        longestCommonSubsequence();
-        getLCS(firstLength, secondLength);
-        System.out.println("Length: " + table[firstLength][secondLength]);
-        System.out.println("LCS: " + stringBuilder.toString());
+        System.out.println("LCS: " + getLCS(first, second) + "\nLength: " + getLCS(first, second).length());
+        System.out.println(Arrays.deepToString(table));
     }
 }
