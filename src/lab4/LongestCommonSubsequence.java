@@ -1,6 +1,5 @@
 package lab4;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -67,7 +66,8 @@ public class LongestCommonSubsequence {
         System.out.println("Second string:");
         String second = scanner.nextLine();
         scanner.close();
-        System.out.println("LCS: " + getLCS(first, second) + "\nLength: " + getLCS(first, second).length());
-        System.out.println(Arrays.deepToString(table));
+        String LCS = getLCS(first, second);
+        System.out.println("LCS: " + LCS + "\nLength: " + LCS.length());
+        System.out.println("d(first, second): " + (first.length() - LCS.length()));
     }
 }
