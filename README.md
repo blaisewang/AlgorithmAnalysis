@@ -24,7 +24,7 @@ The Solution to Maximum SubArray problem and its sum with time complexity O(n)
 
 ## Lab 4
 Get Longest Common Subsequence from two strings and the length of LCS.
-
+Calculate the distance between string A and string B.
 
 Feel free to use/take/change it.
 
