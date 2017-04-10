@@ -37,7 +37,6 @@ public class LongestCommonSubsequence {
                         table[row][column] = table[row - 1][column - 1] + 1;
                     }
                 }
-
             }
         }
     }
