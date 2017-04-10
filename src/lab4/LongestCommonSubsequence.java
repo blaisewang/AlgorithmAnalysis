@@ -67,7 +67,8 @@ public class LongestCommonSubsequence {
         String second = scanner.nextLine();
         scanner.close();
         String LCS = getLCS(first, second);
-        System.out.println("LCS: " + LCS + "\nLength: " + LCS.length());
-        System.out.println("d(first, second): " + (first.length() - LCS.length()));
+        System.out.println("LCS: " + LCS);
+        System.out.println("Length: " + LCS.length());
+        System.out.println("d(First, Second): " + (first.length() - LCS.length()));
     }
 }
