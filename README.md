@@ -16,6 +16,8 @@ Beside this, I did some minor work to compare the efficiency of Quick Sort and M
 So you need to import [JFreeChart](https://github.com/jfree/jfreechart) libraries before compile the project.
 
 
+![](http://wx1.sinaimg.cn/mw690/9cbe429fly1feomv56tmnj20rs0m8762.jpg) 
+
 
 
 ## Lab 3
