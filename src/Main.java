@@ -88,7 +88,7 @@ public class Main {
         FileOutputStream fileOutputStream = null;
         try {
             fileOutputStream = new FileOutputStream("chart.jpg");
-            ChartUtilities.writeChartAsJPEG(fileOutputStream, 1.0f, lineChart, 2000, 1600, null);
+            ChartUtilities.writeChartAsJPEG(fileOutputStream, 1.0f, lineChart, 1000, 800, null);
         } finally {
             try {
                 assert fileOutputStream != null;
