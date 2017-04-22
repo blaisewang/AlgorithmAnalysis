@@ -63,7 +63,7 @@ public class MatrixChainMultiplication {
 
     public static void main(String[] args) throws NoSuchAlgorithmException {
         // manual input
-        //System.out.println(MatrixChainMultiplication.getResult(new Scanner(System.in).nextLine().split(" ")));
+        System.out.println(MatrixChainMultiplication.getResult(new Scanner(System.in).nextLine().split(" ")));
 
         // Randomly generate
         byte[] bytes = new byte[new Scanner(System.in).nextInt()];
