@@ -28,5 +28,9 @@ The Solution to Maximum SubArray problem and its sum with time complexity O(n)
 Get Longest Common Subsequence from two strings and the length of LCS.
 Calculate the distance between string A and string B.
 
-Feel free to use/take/change it.
+
+## Lab 5
+Solve matrix chain multiplication problem by dynamic programming.
+Given a sequence of matrices and get the most efficient way to multiply these matrices.
+
 
