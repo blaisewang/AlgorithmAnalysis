@@ -13,14 +13,14 @@ public class MatrixChainMultiplication {
     private static int[][] s;
     private static int[] p;
 
-    private static String getResult(String[] order) {
-        int length = order.length;
+    private static String getResult(String[] sequence) {
+        int length = sequence.length;
         p = new int[length];
         s = new int[length][length];
 
         for (int j = 0; j < length; j++) {
             try {
-                p[j] = Integer.parseInt(order[j]);
+                p[j] = Integer.parseInt(sequence[j]);
             } catch (NumberFormatException ignored) {
                 return null;
             }
@@ -63,11 +63,11 @@ public class MatrixChainMultiplication {
 
     public static void main(String[] args) throws NoSuchAlgorithmException {
         // manual input
-        System.out.println(MatrixChainMultiplication.getResult(new Scanner(System.in).nextLine().split(" ")));
+        //System.out.println(MatrixChainMultiplication.getResult(new Scanner(System.in).nextLine().split(" ")));
 
         // Randomly generate
         byte[] bytes = new byte[new Scanner(System.in).nextInt()];
-        SecureRandom.getInstance("SHA1PRNG").nextBytes(bytes);
+        SecureRandom.getInstanceStrong().nextBytes(bytes);
         StringBuilder stringBuilder = new StringBuilder();
 
         for (byte aByte : bytes) {

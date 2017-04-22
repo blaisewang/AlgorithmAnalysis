@@ -49,7 +49,7 @@ public class MaximumSubArray {
         int arraySize = new Scanner(System.in).nextInt();
         int[] array = new int[0];
         try {
-            array = SecureRandom.getInstance("SHA1PRNG").ints(arraySize).toArray();
+            array = SecureRandom.getInstanceStrong().ints(arraySize).toArray();
             Files.write(Paths.get("input.txt"), Arrays.toString(array).getBytes());
         } catch (NoSuchAlgorithmException | IOException e) {
             e.printStackTrace();

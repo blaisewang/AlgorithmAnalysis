@@ -30,7 +30,7 @@ public class Main {
             int arraySize = new Scanner(System.in).nextInt();
             int[] array = new int[0];
             try {
-                array = SecureRandom.getInstance("SHA1PRNG").ints(arraySize).toArray();
+                array = SecureRandom.getInstanceStrong().ints(arraySize).toArray();
                 Files.write(Paths.get("input.txt"), Arrays.toString(array).getBytes());
             } catch (NoSuchAlgorithmException | IOException e) {
                 e.printStackTrace();
@@ -102,7 +102,7 @@ public class Main {
         DefaultCategoryDataset categoryDataset = new DefaultCategoryDataset();
 
         for (int arraySize = 1_000_000; arraySize <= 15_000_000; arraySize += 1_000_000) {
-            int[] array = SecureRandom.getInstance("SHA1PRNG").ints(arraySize).toArray();
+            int[] array = SecureRandom.getInstanceStrong().ints(arraySize).toArray();
             int[] arrayCopy1 = Arrays.copyOf(array, array.length);
 //            int[] arrayCopy2 = Arrays.copyOf(array, array.length);
 
