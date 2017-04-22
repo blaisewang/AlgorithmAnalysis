@@ -55,7 +55,7 @@ public class MatrixChainMultiplication {
 
     private static String optimalParenthesis(int i, int j) {
         if (i != j) {
-            return "(".concat(optimalParenthesis(i, s[i][j]).concat(optimalParenthesis(s[i][j] + 1, j))).concat(")");
+            return "(" + (optimalParenthesis(i, s[i][j]) + (optimalParenthesis(s[i][j] + 1, j))) + (")");
         } else {
             return "A" + i;
         }
